@@ -1,0 +1,12 @@
+grant all on nombreobjeto to public;
+
+y para crear el sinónimo publico es:
+
+create public synonym nombreobjeto for nombreobjeto;
+Enviado en:
+ju.
+De:
+VICTOR HUGO MUNIVE ROCA
+ CREATE TABLE USUARIOS (USUARIO    NOT NULL VARCHAR2(15)  
+NOMBRE     NOT NULL VARCHAR2(50)  
+ESTADO     NOT NULL VARCHAR2(1));
