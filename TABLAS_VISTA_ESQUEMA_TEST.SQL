@@ -1,72 +1,60 @@
-CREATE TABLE ESTAACTA(
+CREATE TABLE ESTADO_ACTA_LIQUIDACION(
 	CODESTAACTA NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
     codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."ESTAACTA"."CODESTAACTA" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."ESTAACTA"."DESCRIPCION" IS 'Descripcion estado del contrato';
-COMMENT ON COLUMN "OBR"."ESTAACTA"."CODENT" IS 'Codigo de la empresa';
 
 
-CREATE TABLE CACAPROY(
+
+CREATE TABLE CCE_DE_PROYECTO(
 	CODCACAPROY NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
     codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."CACAPROY"."CODCACAPROY" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."CACAPROY"."DESCRIPCION" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."CACAPROY"."CODENT" IS 'Codigo de la empresa';
 
 
 
-CREATE TABLE CACAORIN(
+
+CREATE TABLE CCE_ORDEN_INSPECCION(
 	CODCACAORIN NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
 	codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."CACAORIN"."CODCACAORIN" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."CACAORIN"."DESCRIPCION" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."CACAORIN"."CODENT" IS 'Codigo de la empresa';
 
 
-CREATE TABLE CACAESPO(
+
+CREATE TABLE CCE_POLIZA_DE_CONTRATO(
 	CODCACAESPO NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
 	codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."CACAESPO"."CODCACAESPO" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."CACAESPO"."DESCRIPCION" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."CACAESPO"."CODENT" IS 'Codigo de la empresa';
 
 
-CREATE TABLE CACAESOT(
+
+CREATE TABLE CCE_ORDEN_TRABAJO(
  CODCACAESOT NUMBER primary key,
  DESCRIPCION varchar2(200) NOT NULL,
  codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."CACAESOT"."CODCACAESOT" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."CACAESOT"."DESCRIPCION" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."CACAESOT"."CODENT" IS 'Codigo de la empresa';
 
 
 
-CREATE TABLE CACAESCU(
+
+CREATE TABLE CCE_CACAESCU(
 	CODCACAESCU NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
     codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."CACAESCU"."CODCACAESCU" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."CACAESCU"."DESCRIPCION" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."CACAESCU"."CODENT" IS 'Codigo de la empresa';
 
 
-CREATE TABLE CACAESCO(
+
+CREATE TABLE CCE_CONTRATO(
 	CODCACAESCO NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
     codent varchar2(4) NOT NULL
@@ -75,49 +63,41 @@ CREATE TABLE CACAESCO(
 
 
 
-CREATE TABLE CACAESAC(
+CREATE TABLE CCE_ACTA(
 	CODCACAESAC NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
     codent varchar2(4) NOT NULL
 );
 
 
-COMMENT ON COLUMN "OBR"."CACAESAC"."CODCACAESAC" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."CACAESAC"."DESCRIPCION" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."CACAESAC"."CODENT" IS 'Codigo de la empresa';
 
 
-CREATE TABLE CACACLIE(
+
+CREATE TABLE CCE_CLIENTE(
 	CODCACACLIE NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
     codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."CACACLIE"."CODCACACLIE" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."CACACLIE"."DESCRIPCION" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."CACACLIE"."CODENT" IS 'Codigo de la empresa';
 
 
-CREATE TABLE CACAALQO(
+
+CREATE TABLE CCE_ALQUILER_EQUIPO(
 	CODCACAALQO NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
     codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."CACAALQO"."CODCACAALQO" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."CACAALQO"."DESCRIPCION" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."CACAALQO"."CODENT" IS 'Codigo de la empresa';
 
 
-CREATE TABLE CACAACCO(
+
+CREATE TABLE CCE_ACTA_CORTE(
 	CODCACAACCO NUMBER primary key,
 	DESCRIPCION varchar2(200) not null,
     codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."CACAACCO"."CODCACAACCO" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."CACAACCO"."DESCRIPCION" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."CACAACCO"."CODENT" IS 'Codigo de la empresa';
+
 
 
 CREATE TABLE ASEGURADORA(
@@ -126,9 +106,7 @@ CREATE TABLE ASEGURADORA(
 	codent varchar2(4) NOT NULL
 );
 
-COMMENT ON COLUMN "OBR"."ASEGURADORA"."CODASEGURADORA" IS 'Campo identificacion en la tabla';
-COMMENT ON COLUMN "OBR"."ASEGURADORA"."NOMBRE" IS 'Descripcion causa cambio de estado';
-COMMENT ON COLUMN "OBR"."ASEGURADORA"."CODENT" IS 'Codigo de la empresa';
+
 
 /*PRIMERAS 12 ASIGNACION*/
 /************/
