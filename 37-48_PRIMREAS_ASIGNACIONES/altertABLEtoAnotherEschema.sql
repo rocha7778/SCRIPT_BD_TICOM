@@ -51,6 +51,8 @@ REFERENCES CACAEQPR(CODCACAEQPR);
 
 
 
+
+
 --****************************--
 /*ESTO ESTA PENDIENTE NO SE HA EJECUTADO EN LA BD*/
 alter table  EQUIPROY
