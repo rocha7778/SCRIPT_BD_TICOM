@@ -29,7 +29,7 @@ create  view ACTA_LIQUIDACION_OBRA as (select * from  ACTALIQI); --OK
 create  view CE_ACTAS_LIQUIDACION as (select * from  CAESACTA);--ok                            
 create  view CE_ALQUILER_OS as (select * from  CAESALQO); --ok                           
 create  view CE_CLIENTE as (select * from  CAESCLIE);--ok                            
-create  view ACTIVIDADES_CONTRA_LEGA_OT as (select * from  ACTITITR);--OK                            
+create  view ActiviContraLegaOT as (select * from  ACTITITR);--OK                            
 
 --------------------------------------------------------------------------      
 create  view AJUSTE_MOVI_FINAN_CONTRATO as (select * from  AJUSMOFI);--OK                            
@@ -91,7 +91,7 @@ create  view PROYECTO_CONTRATISTA as (select * from  PROYCONT); --ok
                            
 create  view TIPO_AJUSTE_MOVI_FINANCIERO as (select * from  TIAJCLMF); --ok                           
 create  view DOCUMENTO_EMPLEADO_CONTRATISTA as (select * from  TIDOCONT); --ok                           
-create  view TIPO_TRABAJO_OT as (select * from  TIPOTRAB);--ok                            
+create  view tipo_trabajo_asociado_ot as (select * from  TIPOTRAB);--ok                            
 create  view TIPO_TRABAJO_PROYECTO as (select * from  TITRCOPR); --ok                           
 create  view PERFIL_TECNICO_CUADCONT as (select * from  TITRCUAD);--ok                            
 create  view TIPO_OBRAS_PROYECTO as (select * from  TITRPROY);--ok                            
